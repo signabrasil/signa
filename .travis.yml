@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+  - 2.2.2
+gemfile:
+  - Gemfile
+addons:
+  postgresql: "9.3"
+  code_climate:
+    repo_token: 41b454f3c259e32d92e165cf35ec27f8bc5a914a519a6ffc7afae1140c0d5a99
+before_script:
+  - cp config/database.yml.travis config/database.yml
+  - rake db:create db:migrate RAILS_ENV=test
+script: bundle exec rspec spec
