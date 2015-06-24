@@ -7,7 +7,7 @@ development:
   <<: *default
   database: signa_development
 
-test: &test
+test:
   <<: *default
   database: signa_test
 
@@ -16,6 +16,3 @@ production:
   database: signa_production
   username: postgres
   password: postgres
-
-cucumber:
-  <<: *test

@@ -27,9 +27,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'autoprefixer-rails'
 
-#Autenticação
-gem 'devise'
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -54,11 +51,6 @@ group :development, :test do
   gem "shoulda-matchers", require: false
   gem "codeclimate-test-reporter", require: nil
   gem "simplecov"
-
-  gem 'cucumber-rails', require: false
-  gem 'database_cleaner'
-  gem 'selenium-webdriver'
-
 end
 
 group :production do
